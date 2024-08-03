@@ -1,6 +1,9 @@
+//components/ShowCourseComponent.js
 import React from 'react';
 
-function ShowCourseComponent({ courses, filterCourseFunction, addCourseToCartFunction }) {
+function ShowCourseComponent({ courses,
+    filterCourseFunction,
+    addCourseToCartFunction }) {
     return (
         <div className="product-list">
             {filterCourseFunction.length === 0 ? (
@@ -23,7 +26,6 @@ function ShowCourseComponent({ courses, filterCourseFunction, addCourseToCartFun
                 ))
             )}
         </div>
-
     );
 }
 
